@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">ProyectoFinalReel</string>
+    <string name="title_inicio">Inicio</string>
+    <string name="title_cartelera">Cartelera</string>
+    <string name="title_estrenos">Estrenos</string>
+    <string name="title_cines">Cines</string>
+    <string name="title_perfil">Perfil</string>
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="registro">Registro</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="tituloinicio">Inicia Sesión</string>
+    <string name="nombre_usuario">Nombre de Usuario</string>
+    <string name="contra">Contraseña</string>
+    <string name="olvidate_contraseña">¿Olvidaste tu contraseña?</string>
+    <string name="olvidasteU">¿Olvidaste tu nombre de usuario?</string>
+    <string name="olvidar_usuario">Olvidé mi \nNombre de \nUsuario</string>
+    <string name="email">E-mail</string>
+    <string name="enviar">Enviar</string>
+    <string name="nombre">Olvidé mi\ Contraseña</string>
+    <string name="nombreE">Enviaremos un link a \n tu correo para que \n puedas recuperar tu\n nombre de usuario</string>
+    <string name="nombreus">Enviaremos un link a tu \n correo para que puedas\n recuperar tu contraseña</string>
+    <string name="repiteC">Repetir Contraseña</string>
+    <string name="registrar">Regístrate</string>
+    <string name="registra">Regístrarse</string>
+    <string name="promocion">Promociones cerca de ti</string>
+    <string name="desc_ubi">Selecciona tu ciudad y te\n mostraremos una cartelera\n con todas las peliculas\n disponibles en la zona</string>
+    <string name="nombrep">País</string>
+    <string name="nombreEst">Estado</string>
+    <string name="nombreCiu">Ciudad</string>
+    <string name="nomUbi">Ubicación</string>
+    <string name="nombreUbi">Permitir deteccion de ubicación</string>
+    <string name="NombreDet">Ciudad detectada</string>
+    <string name="conseguirM">Conseguir Monedas</string>
+    <string name="canjearM">Canjear Monedas</string>
+
+</resources>
