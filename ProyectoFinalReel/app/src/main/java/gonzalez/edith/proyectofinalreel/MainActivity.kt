@@ -21,24 +21,31 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.ktx.Firebase
 import gonzalez.edith.proyectofinalreel.databinding.ActivityLoginBinding
 import gonzalez.edith.proyectofinalreel.databinding.ActivityMainBinding
+import org.imaginativeworld.whynotimagecarousel.CarouselItem
+import org.imaginativeworld.whynotimagecarousel.ImageCarousel
 
 
 class MainActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
-    private lateinit var binding: ActivityLoginBinding
-    private lateinit var binding2: ActivityMainBinding
+   // private lateinit var binding: ActivityLoginBinding
+    private lateinit var binding: ActivityMainBinding
+    val list= mutableListOf<CarouselItem>()
+
     //private val userRef = FirebaseDatabase.getInstance().getReference("Users")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        binding2 = ActivityMainBinding.inflate(layoutInflater)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding = ActivityLoginBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        auth = Firebase.auth
-        signOut()
 
-        val navView: BottomNavigationView = binding2.navView
+
+        //carrusel de imagenes
+        val carousel: ImageCarousel = findViewById(R.id.img_carrousel)
+        list.add(CarouselItem(imageDrawable = R.drawable.godzillavskong, "King Kong vs GodZilla"))
+        list.add(CarouselItem(imageDrawable = R.drawable.carousel_1, null))
+        carousel.addData(list)
+
+        val navView: BottomNavigationView = binding.navView
 
         val navController = findNavController(R.id.nav_host_fragment_activity_main)
         // Passing each menu ID as a set of Ids because each
