@@ -33,6 +33,7 @@ class RegistrarseActivity: AppCompatActivity() {
         setContentView(binding.root)
 
         auth = Firebase.auth
+
         var btnSave: Button =findViewById(R.id.btnregist) as Button
         btnSave.setOnClickListener { saveMarkFromForm() }
         userRef.addChildEventListener(object : ChildEventListener {
@@ -63,7 +64,7 @@ class RegistrarseActivity: AppCompatActivity() {
         userRef.push().setValue(usuario)
     }
     private fun writeMark(mark: User) {
-        var listV: TextView =findViewById(R.id.list_textView) as TextView
+        var listV: TextView = findViewById(R.id.list_textView) as TextView
         val text = listV.text.toString() + mark.toString() + "\n"
         listV.text = text
     }

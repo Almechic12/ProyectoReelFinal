@@ -2,6 +2,7 @@ package gonzalez.edith.proyectofinalreel
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.Window
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -33,6 +34,8 @@ class MainActivity : AppCompatActivity() {
 
     //private val userRef = FirebaseDatabase.getInstance().getReference("Users")
     override fun onCreate(savedInstanceState: Bundle?) {
+        requestWindowFeature(Window.FEATURE_NO_TITLE)
+        supportActionBar?.hide()
         super.onCreate(savedInstanceState)
 
         binding = ActivityMainBinding.inflate(layoutInflater)

@@ -87,25 +87,25 @@
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/notificacion_36x36"
+                    android:src="@drawable/notificacion"
                     android:layout_marginRight="10dp"/>
 
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/por_ver_off_36x36"
+                    android:src="@drawable/por_ver_off"
                     android:layout_marginRight="10dp"/>
 
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/info_36x36"
+                    android:src="@drawable/info"
                     android:layout_marginRight="10dp"/>
 
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/compartir_36x36"
+                    android:src="@drawable/compartir"
                     android:layout_marginRight="10dp"/>
 
             </LinearLayout>
@@ -214,25 +214,25 @@
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/notificacion_36x36"
+                    android:src="@drawable/notificacion"
                     android:layout_marginRight="10dp"/>
 
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/por_ver_off_36x36"
+                    android:src="@drawable/por_ver_off"
                     android:layout_marginRight="10dp"/>
 
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/info_36x36"
+                    android:src="@drawable/info"
                     android:layout_marginRight="10dp"/>
 
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="20dp"
-                    android:src="@drawable/compartir_36x36"
+                    android:src="@drawable/compartir"
                     android:layout_marginRight="10dp"/>
 
             </LinearLayout>

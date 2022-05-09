@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.Window
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
@@ -17,20 +18,22 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var binding: ActivityLoginBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        requestWindowFeature(Window.FEATURE_NO_TITLE)
+        supportActionBar?.hide()
         super.onCreate(savedInstanceState)
 
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
         auth = Firebase.auth
 
-        binding.btnlogin.setOnClickListener {
-            val mUsuario = binding.nombreusuario.text.toString()
-            val mPassword = binding.contra.text.toString()
+        binding.btnLogin.setOnClickListener {
+            val mUsuario = binding.etNombreusuario.text.toString()
+            val mPassword = binding.etContra.text.toString()
 
             when {
                 mUsuario.isEmpty() || mPassword.isEmpty() -> {
                     Toast.makeText(
-                        baseContext, "Mail o contraseÃ±a incorrecta.",
+                        baseContext, "Mail o contraseña incorrecta.",
                         Toast.LENGTH_SHORT
                     ).show()
                 }
@@ -41,7 +44,7 @@ class LoginActivity : AppCompatActivity() {
             }
 
         }
-        binding.btnregistrarse.setOnClickListener {
+        binding.btnRegistrarse.setOnClickListener {
             val intent = Intent(this, RegistrarseActivity::class.java)
             startActivity(intent)
         }
