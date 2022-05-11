@@ -44,6 +44,15 @@
         <entry key="..\:/Users/ucova/AndroidStudioProjects/ProyectoFinalReel/app/src/main/res/layout/genero.xml" value="0.22" />
         <entry key="..\:/Users/ucova/AndroidStudioProjects/ProyectoFinalReel/app/src/main/res/layout/pelicula.xml" value="0.3319746376811594" />
         <entry key="..\:/Users/ucova/AndroidStudioProjects/ProyectoFinalReel/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25677083333333334" />
+        <entry key="..\:/Users/ucova/AndroidStudioProjects/ProyectoReelFinal-master/app/src/main/res/drawable/calificacion_border.xml" value="0.2525" />
+        <entry key="..\:/Users/ucova/AndroidStudioProjects/ProyectoReelFinal-master/app/src/main/res/drawable/estrenos_border.xml" value="0.2525" />
+        <entry key="..\:/Users/ucova/AndroidStudioProjects/ProyectoReelFinal-master/app/src/main/res/drawable/estrenos_fecha_border.xml" value="0.2525" />
+        <entry key="..\:/Users/ucova/AndroidStudioProjects/ProyectoReelFinal-master/app/src/main/res/layout/activity_detalles_pelicula.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/ucova/AndroidStudioProjects/ProyectoReelFinal-master/app/src/main/res/layout/fragment_calificaciones.xml" value="0.67" />
+        <entry key="..\:/Users/ucova/AndroidStudioProjects/ProyectoReelFinal-master/app/src/main/res/layout/fragment_cines.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/ucova/AndroidStudioProjects/ProyectoReelFinal-master/app/src/main/res/layout/fragment_datos.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/ucova/AndroidStudioProjects/ProyectoReelFinal-master/app/src/main/res/layout/fragment_horarios.xml" value="0.5" />
+        <entry key="..\:/Users/ucova/AndroidStudioProjects/ProyectoReelFinal-master/app/src/main/res/layout/fragment_perfil.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>
