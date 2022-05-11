@@ -75,7 +75,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
-                    android:fontFamily="sans-serif-black"
+                    android:fontFamily="@font/litteratextbold"
                     android:textSize="20sp"
                     android:text="Godzilla Vs Kong" />
 
@@ -83,7 +83,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
-                    android:fontFamily="sans-serif-light"
+                    android:fontFamily="@font/litteratextlight"
                     android:text="Godzilla Vs Kong (2021)" />
 
                 <LinearLayout
@@ -120,14 +120,14 @@
                             android:text="Adam Wingward"
                             android:textColor="@color/white"
                             android:textSize="12sp"
-                            android:fontFamily="sans-serif-light"/>
+                            android:fontFamily="@font/litteratextlight"/>
 
                         <TextView
                             android:text="Rebecca Hall"
                             android:gravity="left"
                             android:textColor="@color/white"
                             android:textSize="12sp"
-                            android:fontFamily="sans-serif-light"/>
+                            android:fontFamily="@font/litteratextlight"/>
                     </TableRow>
 
                     <TableRow>
@@ -136,7 +136,7 @@
                             android:text="Alexander Skarsgård"
                             android:textColor="@color/white"
                             android:textSize="12sp"
-                            android:fontFamily="sans-serif-light"/>
+                            android:fontFamily="@font/litteratextlight"/>
                     </TableRow>
 
                     <TableRow>
@@ -145,7 +145,7 @@
                             android:text="Eiza González"
                             android:textColor="@color/white"
                             android:textSize="12sp"
-                            android:fontFamily="sans-serif-light"/>
+                            android:fontFamily="@font/litteratextlight"/>
                     </TableRow>
 
                     <TableRow>
@@ -154,7 +154,7 @@
                             android:text="Millie Bobby Brown"
                             android:textColor="@color/white"
                             android:textSize="12sp"
-                            android:fontFamily="sans-serif-light"/>
+                            android:fontFamily="@font/litteratextlight"/>
                     </TableRow>
 
                 </TableLayout>
@@ -178,7 +178,7 @@
                 android:layout_marginTop="15dp"
                 android:textColor="@color/white"
                 android:gravity="center"
-                android:textStyle="bold"
+                android:fontFamily="@font/litteratextbold"
                 android:textSize="18sp"
                 android:text="Calificación Media de los Usuarios"/>
 
@@ -203,7 +203,7 @@
                 android:layout_marginStart="15sp"
                 android:layout_marginEnd="15sp"
                 android:gravity="left"
-                android:textStyle="bold"
+                android:fontFamily="@font/litteratextbold"
                 android:textSize="20sp"
                 android:text="Trailer"/>
 
@@ -221,7 +221,7 @@
                 android:layout_marginStart="15sp"
                 android:layout_marginEnd="15sp"
                 android:gravity="left"
-                android:textStyle="bold"
+                android:fontFamily="@font/litteratextbold"
                 android:textSize="20sp"
                 android:text="Sinopsis"/>
 
@@ -233,7 +233,7 @@
                 android:layout_marginStart="15sp"
                 android:layout_marginEnd="15sp"
                 android:gravity="left"
-                android:fontFamily="sans-serif-light"
+                android:fontFamily="@font/litteratextlight"
                 android:text="Godzilla y Kong, dos de las fuerzas más poderosas de un planeta habitado por aterradoras criaturas, se enfrentan en un espectacular combate que sacude los cimientos de la humanidad. Monarch se embarca en una misión de alto riesgo y pone rumbo hacia territorios inexplorados para descubrir los orígenes de estos dos titanes, en un último esfuerzo por tratar de salvar a dos bestias que parecen tener las horas contadas sobre la faz de la Tierra."/>
 
         </LinearLayout>

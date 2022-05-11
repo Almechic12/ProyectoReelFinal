@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         android:text="Película"
         android:textSize="36sp"
+        android:fontFamily="@font/litteratextbold"
         android:textColor="@color/white"
         android:textStyle="bold"
         />
@@ -40,12 +41,13 @@
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Datos" />
+                android:text="Datos"
+                />
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Horarios" />
+                android:text="Horarios"/>
 
             <com.google.android.material.tabs.TabItem
                 android:layout_width="wrap_content"

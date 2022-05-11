@@ -41,7 +41,7 @@
                     android:text="Rick Sanchez"
                     android:textColor="@color/white"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:fontFamily="@font/litteratextbold" />
 
                 <RatingBar
                     android:id="@+id/rb_rating1"
@@ -64,7 +64,7 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_toEndOf="@id/tv_nombreUsuario1"
-                    android:fontFamily="sans-serif-light"
+                    android:fontFamily="@font/litteratextlight"
                     android:gravity="right"
                     android:text="25/marzo/2021"
                     android:textColor="@color/white"
@@ -94,7 +94,7 @@
                         android:layout_marginRight="2dp"
                         android:text="31"
                         android:textColor="@color/white"
-                        android:textStyle="bold" />
+                        android:fontFamily="@font/litteratextbold" />
 
                     <ImageButton
                         android:id="@+id/img_downvote1"
@@ -114,7 +114,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
-                    android:fontFamily="sans-serif-light"
+                    android:fontFamily="@font/litteratextlight"
                     android:text="Todo lo que me esperaba y más. Un poco lenta en algunas partes, pero esa batalla final hizo que valiera completamente la pena. 100% recomendada, sobre todo si eres fan del Monsterverse, ya que podemos esperar mucho más de esta saga de películas en el futuro."
                     android:textColor="@color/white"
                     android:textSize="12sp" />
@@ -146,7 +146,7 @@
                     android:text="RyanStartedTheFire"
                     android:textColor="@color/white"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:fontFamily="@font/litteratextbold" />
 
                 <RatingBar
                     android:id="@+id/rb_rating2"
@@ -169,7 +169,7 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_toEndOf="@id/tv_nombreUsuario2"
-                    android:fontFamily="sans-serif-light"
+                    android:fontFamily="@font/litteratextlight"
                     android:gravity="right"
                     android:text="25/marzo/2021"
                     android:textColor="@color/white"
@@ -199,7 +199,7 @@
                         android:layout_marginRight="2dp"
                         android:text="24"
                         android:textColor="@color/white"
-                        android:textStyle="bold" />
+                        android:fontFamily="@font/litteratextbold" />
 
                     <ImageButton
                         android:id="@+id/img_downvote2"
@@ -218,7 +218,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
-                    android:fontFamily="sans-serif-light"
+                    android:fontFamily="@font/litteratextlight"
                     android:text="Épico. Nada más que decir."
                     android:textColor="@color/white"
                     android:textSize="12sp" />
@@ -250,7 +250,7 @@
                     android:text="Parry Hotter"
                     android:textColor="@color/white"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:fontFamily="@font/litteratextbold" />
 
                 <RatingBar
                     android:id="@+id/rb_rating3"
@@ -273,7 +273,7 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_toEndOf="@id/tv_nombreUsuario3"
-                    android:fontFamily="sans-serif-light"
+                    android:fontFamily="@font/litteratextlight"
                     android:gravity="right"
                     android:text="25/marzo/2021"
                     android:textColor="@color/white"
@@ -303,7 +303,7 @@
                         android:layout_marginRight="2dp"
                         android:text="22"
                         android:textColor="@color/white"
-                        android:textStyle="bold" />
+                        android:fontFamily="@font/litteratextbold" />
 
                     <ImageButton
                         android:id="@+id/img_downvote3"
@@ -322,7 +322,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
-                    android:fontFamily="sans-serif-light"
+                    android:fontFamily="@font/litteratextlight"
                     android:text="Las partes de acción estuvieron bien, pero hubo partes que se me hacían muy aburridas. 4/5"
                     android:textColor="@color/white"
                     android:textSize="12sp" />
@@ -354,7 +354,7 @@
                     android:text="MrPotato"
                     android:textColor="@color/white"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:fontFamily="@font/litteratextbold" />
 
                 <RatingBar
                     android:id="@+id/rb_rating4"
@@ -377,7 +377,7 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_toEndOf="@id/tv_nombreUsuario4"
-                    android:fontFamily="sans-serif-light"
+                    android:fontFamily="@font/litteratextlight"
                     android:gravity="right"
                     android:text="25/marzo/2021"
                     android:textColor="@color/white"
@@ -407,7 +407,7 @@
                         android:layout_marginRight="2dp"
                         android:text="19"
                         android:textColor="@color/white"
-                        android:textStyle="bold" />
+                        android:fontFamily="@font/litteratextbold" />
 
                     <ImageButton
                         android:id="@+id/img_downvote4"
@@ -426,7 +426,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
-                    android:fontFamily="sans-serif-light"
+                    android:fontFamily="@font/litteratextlight"
                     android:text="TEAM KONG POR SIEMPRE!!!"
                     android:textColor="@color/white"
                     android:textSize="12sp" />
@@ -458,7 +458,7 @@
                     android:text="Joanna K"
                     android:textColor="@color/white"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:fontFamily="@font/litteratextbold" />
 
                 <RatingBar
                     android:id="@+id/rb_rating5"
@@ -481,7 +481,7 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_toEndOf="@id/tv_nombreUsuario5"
-                    android:fontFamily="sans-serif-light"
+                    android:fontFamily="@font/litteratextlight"
                     android:gravity="right"
                     android:text="25/marzo/2021"
                     android:textColor="@color/white"
@@ -511,7 +511,7 @@
                         android:layout_marginRight="2dp"
                         android:text="15"
                         android:textColor="@color/white"
-                        android:textStyle="bold" />
+                        android:fontFamily="@font/litteratextbold" />
 
                     <ImageButton
                         android:id="@+id/img_downvote5"
@@ -530,7 +530,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
-                    android:fontFamily="sans-serif-light"
+                    android:fontFamily="@font/litteratextlight"
                     android:text="La peli estuvo buenísima, no era muy fan de las películas del Monsterverse pero luego de ver algo tan genial creo que me daré el tiempo de ver las otras de Godzilla y Kong. Espero que saquen más :)"
                     android:textColor="@color/white"
                     android:textSize="12sp" />
@@ -562,7 +562,7 @@
                     android:text="Arceus Inmortal"
                     android:textColor="@color/white"
                     android:textSize="18sp"
-                    android:textStyle="bold" />
+                    android:fontFamily="@font/litteratextbold" />
 
                 <RatingBar
                     android:id="@+id/rb_rating"
@@ -585,7 +585,7 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
                     android:layout_toEndOf="@id/tv_nombreUsuario"
-                    android:fontFamily="sans-serif-light"
+                    android:fontFamily="@font/litteratextlight"
                     android:gravity="right"
                     android:text="26/marzo/2021"
                     android:textColor="@color/white"
@@ -615,7 +615,7 @@
                         android:layout_marginRight="2dp"
                         android:text="8"
                         android:textColor="@color/white"
-                        android:textStyle="bold" />
+                        android:fontFamily="@font/litteratextbold" />
 
                     <ImageButton
                         android:id="@+id/img_downvote"
@@ -634,7 +634,7 @@
                     android:layout_marginStart="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
-                    android:fontFamily="sans-serif-light"
+                    android:fontFamily="@font/litteratextlight"
                     android:text="Todo lo que me esperaba y más. Un poco lenta en algunas partes, pero esa batalla final hizo que valiera completamente la pena. 100% recomendada, sobre todo si eres fan del Monsterverse, ya que podemos esperar mucho más de esta saga de películas en el futuro."
                     android:textColor="@color/white"
                     android:textSize="12sp" />
