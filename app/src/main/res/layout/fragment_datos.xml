@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/estrenos_border"
+    android:background="@drawable/detalles_pelicula_border"
     >
 
     <LinearLayout
@@ -16,32 +16,37 @@
         android:gravity="right">
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:scaleType="centerInside"
             android:src="@drawable/agregar_a_lista"
             android:background="@color/grisesito"/>
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:scaleType="centerInside"
             android:src="@drawable/por_ver_off"
             android:background="@color/grisesito"/>
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:scaleType="centerInside"
             android:src="@drawable/vista_off"
             android:background="@color/grisesito"/>
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:scaleType="centerInside"
             android:src="@drawable/favorita_off"
             android:background="@color/grisesito"/>
 
         <ImageButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:scaleType="centerInside"
             android:src="@drawable/compartir"
             android:background="@color/grisesito"/>
 
@@ -62,6 +67,7 @@
             android:layout_height="wrap_content">
 
             <ImageView
+                android:id="@+id/img_pelicula"
                 android:layout_width="150dp"
                 android:layout_height="180dp"
                 android:src="@drawable/king_kong" />
@@ -72,6 +78,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/tv_peli_titulo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
@@ -80,6 +87,7 @@
                     android:text="Godzilla Vs Kong" />
 
                 <TextView
+                    android:id="@+id/tv_peli_titulo_ingles"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textColor="@color/white"
@@ -116,6 +124,7 @@
 
                     <TableRow>
                         <TextView
+                            android:id="@+id/tv_director"
                             android:layout_column="1"
                             android:text="Adam Wingward"
                             android:textColor="@color/white"
@@ -163,80 +172,82 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/linear"
-            android:layout_marginBottom="15dp"
-            android:orientation="vertical">
-
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="15sp"
-                android:layout_marginEnd="15sp"
-                android:layout_marginTop="15dp"
-                android:textColor="@color/white"
-                android:gravity="center"
-                android:fontFamily="@font/litteratextbold"
-                android:textSize="18sp"
-                android:text="Calificación Media de los Usuarios"/>
+                android:layout_below="@id/linear"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
 
-            <RatingBar
-                android:id="@+id/estrellas"
-                style="@style/Widget.AppCompat.RatingBar.Indicator"
-                android:layout_gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
-                android:max="5"
-                android:numStars="5"
-                android:progressTint="@color/flat_yellow_1"
-                android:rating="4.5"
-                android:stepSize="0.5" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15sp"
+                    android:fontFamily="@font/litteratextbold"
+                    android:gravity="center"
+                    android:text="Calificación Media de los Usuarios"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:textColor="@color/white"
-                android:layout_marginStart="15sp"
-                android:layout_marginEnd="15sp"
-                android:gravity="left"
-                android:fontFamily="@font/litteratextbold"
-                android:textSize="20sp"
-                android:text="Trailer"/>
+                <RatingBar
+                    android:id="@+id/estrellas"
+                    style="@style/Widget.AppCompat.RatingBar.Indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:max="5"
+                    android:numStars="5"
+                    android:progressTint="@color/flat_yellow_1"
+                    android:rating="4.5"
+                    android:stepSize="0.5" />
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="200dp"
-                android:layout_marginTop="15dp"
-                android:src="@drawable/trailer_godzilla"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15sp"
+                    android:fontFamily="@font/litteratextbold"
+                    android:gravity="left"
+                    android:text="Trailer"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:textColor="@color/white"
-                android:layout_marginStart="15sp"
-                android:layout_marginEnd="15sp"
-                android:gravity="left"
-                android:fontFamily="@font/litteratextbold"
-                android:textSize="20sp"
-                android:text="Sinopsis"/>
+                <ImageView
+                    android:id="@+id/img_trailer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/trailer_godzilla" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:textColor="@color/white"
-                android:layout_marginStart="15sp"
-                android:layout_marginEnd="15sp"
-                android:gravity="left"
-                android:fontFamily="@font/litteratextlight"
-                android:text="Godzilla y Kong, dos de las fuerzas más poderosas de un planeta habitado por aterradoras criaturas, se enfrentan en un espectacular combate que sacude los cimientos de la humanidad. Monarch se embarca en una misión de alto riesgo y pone rumbo hacia territorios inexplorados para descubrir los orígenes de estos dos titanes, en un último esfuerzo por tratar de salvar a dos bestias que parecen tener las horas contadas sobre la faz de la Tierra."/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15sp"
+                    android:fontFamily="@font/litteratextbold"
+                    android:gravity="left"
+                    android:text="Sinopsis"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
 
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_sinopsis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15sp"
+                    android:fontFamily="@font/litteratextlight"
+                    android:gravity="left"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque finibus ac velit id blandit. Aenean efficitur elit non vulputate pellentesque. Proin metus ipsum, venenatis in mauris ut, commodo consectetur ante. Proin rhoncus justo sed lectus ultricies pretium. Sed luctus eget lacus in viverra."
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
 
         </RelativeLayout>
 
