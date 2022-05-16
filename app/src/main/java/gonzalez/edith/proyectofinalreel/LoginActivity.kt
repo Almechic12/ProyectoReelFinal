@@ -28,7 +28,7 @@ class LoginActivity : AppCompatActivity() {
 
         binding.btnLogin.setOnClickListener {
             val mUsuario = binding.etNombreusuario.text.toString()
-            val mPassword = binding.etContra.text.toString()
+            val mPassword = binding.textContra.text.toString()
 
             when {
                 mUsuario.isEmpty() || mPassword.isEmpty() -> {

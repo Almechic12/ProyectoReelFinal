@@ -124,7 +124,7 @@
         app:drawableLeftCompat="@drawable/ic_baseline_lock_24" />
 
     <EditText
-        android:id="@+id/et_contra"
+        android:id="@+id/textContra"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_contrasenia"
