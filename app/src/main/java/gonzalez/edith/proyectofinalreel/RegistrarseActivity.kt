@@ -1,5 +1,6 @@
 package gonzalez.edith.proyectofinalreel
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.util.Patterns
@@ -40,6 +41,7 @@ class RegistrarseActivity: AppCompatActivity() {
                 Toast.makeText(this, "Confirma la contraseña.", Toast.LENGTH_SHORT).show()
             } else{
                 createAccount(mEmail, mPassword)
+                Toast.makeText(this, "Se a registrado la cuenta con exito", Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -55,5 +57,9 @@ class RegistrarseActivity: AppCompatActivity() {
                 Toast.makeText(baseContext, "Authentication failed.", Toast.LENGTH_SHORT).show()
             }
         }
+    }
+    private fun login(){
+        var intent: Intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
     }
 }
