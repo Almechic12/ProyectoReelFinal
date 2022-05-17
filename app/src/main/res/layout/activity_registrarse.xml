@@ -75,11 +75,12 @@
         android:layout_width="240dp"
         android:layout_height="38dp"
         android:layout_gravity="center"
-        android:inputType="textPassword"
-        android:textAlignment="center"
         android:layout_marginTop="5dp"
         android:background="@drawable/round_button_gris"
+        android:inputType="textPassword"
+        android:textAlignment="center"
         android:textSize="16sp" />
+
     <TextView
         android:id="@+id/tv_repetirC"
         android:layout_marginTop="30dp"
