@@ -41,6 +41,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        auth = Firebase.auth
+
 
         //carrusel de imagenes
         val carousel: ImageCarousel = findViewById(R.id.img_carrousel)
@@ -63,8 +65,7 @@ class MainActivity : AppCompatActivity() {
     }
     private fun signOut(){
         Firebase.auth.signOut()
-        Toast.makeText(this, "Cerrando sesión...", Toast.LENGTH_SHORT).show()
-        val intent = Intent(this, MainActivity::class.java)
+        val intent = Intent(this,MainActivity::class.java)
         startActivity(intent)
     }
 

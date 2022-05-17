@@ -41,10 +41,11 @@ class LoginActivity : AppCompatActivity() {
                     SignIn(mUsuario, mPassword)
                 }
 
+
             }
 
         }
-        binding.btnRegistrarse.setOnClickListener {
+        binding.btnR.setOnClickListener {
             val intent = Intent(this, RegistrarseActivity::class.java)
             startActivity(intent)
         }
