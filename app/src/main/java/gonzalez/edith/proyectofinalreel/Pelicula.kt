@@ -5,4 +5,5 @@ class Pelicula (var titulo: String,
                 var image: Int,
                 var genero: ArrayList<String>,
                 var estrellas: Float,
+                var trailer: Int,
                 var sinopsis: String)
