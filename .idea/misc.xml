@@ -26,6 +26,12 @@
         <entry key="..\:/Users/PC/AndroidStudioProjects/Proyecto Final/ProyectoFinalReel/app/src/main/res/menu/bottom_nav_menu.xml" value="0.18333333333333332" />
         <entry key="..\:/Users/ediit/AndroidStudioProjects/ProyectoFinalReel/app/src/main/res/layout/fragment_cartelera.xml" value="0.23958333333333334" />
         <entry key="..\:/Users/ediit/AndroidStudioProjects/ProyectoFinalReel/app/src/main/res/layout/fragment_cines.xml" value="0.23958333333333334" />
+        <entry key="..\:/Users/ediit/AndroidStudioProjects/ProyectoReelFinal3/app/src/main/res/font/littera_text.xml" value="0.1712962962962963" />
+        <entry key="..\:/Users/ediit/AndroidStudioProjects/ProyectoReelFinal3/app/src/main/res/layout/activity_detalles_pelicula.xml" value="0.3625" />
+        <entry key="..\:/Users/ediit/AndroidStudioProjects/ProyectoReelFinal3/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/ediit/AndroidStudioProjects/ProyectoReelFinal3/app/src/main/res/layout/activity_registrarse.xml" value="0.33" />
+        <entry key="..\:/Users/ediit/AndroidStudioProjects/ProyectoReelFinal3/app/src/main/res/layout/activity_ubicacion.xml" value="0.1" />
+        <entry key="..\:/Users/ediit/AndroidStudioProjects/ProyectoReelFinal3/app/src/main/res/layout/pelicula.xml" value="0.23369565217391305" />
         <entry key="..\:/Users/ucova/AndroidStudioProjects/ProyectoFinalReel/app/src/main/res/drawable/app_tab_layout.xml" value="0.282" />
         <entry key="..\:/Users/ucova/AndroidStudioProjects/ProyectoFinalReel/app/src/main/res/drawable/estrenos_border.xml" value="0.292" />
         <entry key="..\:/Users/ucova/AndroidStudioProjects/ProyectoFinalReel/app/src/main/res/drawable/tabborder.xml" value="0.292" />
@@ -45,7 +51,6 @@
         <entry key="..\:/Users/ucova/AndroidStudioProjects/ProyectoFinalReel/app/src/main/res/layout/pelicula.xml" value="0.3319746376811594" />
         <entry key="..\:/Users/ucova/AndroidStudioProjects/ProyectoFinalReel/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25677083333333334" />
         <entry key="..\:/Users/ucova/AndroidStudioProjects/ProyectoReelFinal-master/app/src/main/res/drawable/calificacion_border.xml" value="0.2525" />
-        <entry key="..\:/Users/ucova/AndroidStudioProjects/ProyectoReelFinal-master/app/src/main/res/drawable/detalles_pelicula_border.xml" value="0.251" />
         <entry key="..\:/Users/ucova/AndroidStudioProjects/ProyectoReelFinal-master/app/src/main/res/drawable/estrenos_border.xml" value="0.2525" />
         <entry key="..\:/Users/ucova/AndroidStudioProjects/ProyectoReelFinal-master/app/src/main/res/drawable/estrenos_fecha_border.xml" value="0.2525" />
         <entry key="..\:/Users/ucova/AndroidStudioProjects/ProyectoReelFinal-master/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.251" />
