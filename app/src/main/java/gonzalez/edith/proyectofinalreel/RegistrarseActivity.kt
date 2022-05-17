@@ -32,7 +32,7 @@ class RegistrarseActivity: AppCompatActivity() {
         setContentView(binding.root)
         Thread.sleep( 2000)
     super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_login)
+    setContentView(R.layout.activity_registrarse)
 
     //Analytics Event
     val analytics = FirebaseAnalytics.getInstance(this)
