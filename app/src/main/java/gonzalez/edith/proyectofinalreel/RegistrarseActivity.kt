@@ -38,9 +38,10 @@ class RegistrarseActivity: AppCompatActivity() {
             } else if(mPassword.isEmpty() || !passwordRegex.matcher(mPassword).matches()){
                 Toast.makeText(this, "La contraseña es debil.", Toast.LENGTH_SHORT).show()
             } else if(mPassword != mRepeatPassword){
-                Toast.makeText(this, "Las contraseñas no coinciden.", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Confirma la contraseña.", Toast.LENGTH_SHORT).show()
             } else{
                 createAccount(mEmail, mPassword)
+                Toast.makeText(this, "Se a registrado la cuenta con exito", Toast.LENGTH_SHORT).show()
             }
         }
 
@@ -48,7 +49,7 @@ class RegistrarseActivity: AppCompatActivity() {
     private fun createAccount(email: String, password: String){
         auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(this) { task ->
             if (task.isSuccessful) {
-                login()
+
             } else {
                 // If sign in fails, display a message to the user.
                 Log.w("TAG", "createUserWithEmail:failure", task.exception)
@@ -57,8 +58,7 @@ class RegistrarseActivity: AppCompatActivity() {
         }
     }
     private fun login(){
-        Toast.makeText(baseContext, "Cuenta creada con éxito.", Toast.LENGTH_SHORT).show()
-        var intent = Intent(this, LoginActivity::class.java)
+        var intent: Intent = Intent(this, LoginActivity::class.java)
         startActivity(intent)
     }
 }

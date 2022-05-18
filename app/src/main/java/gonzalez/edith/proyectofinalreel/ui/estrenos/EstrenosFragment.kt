@@ -11,6 +11,7 @@ import android.view.ViewGroup
 import android.widget.*
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.recyclerview.widget.RecyclerView
 import gonzalez.edith.proyectofinalreel.Estreno
 import gonzalez.edith.proyectofinalreel.Pelicula
 import gonzalez.edith.proyectofinalreel.R
@@ -36,7 +37,7 @@ class EstrenosFragment : Fragment() {
             ViewModelProvider(this).get(EstrenosViewModel::class.java)
 
         val view = inflater.inflate(R.layout.fragment_estrenos, container, false)
-        val gridview = view.findViewById(R.id.gridview) as ListView
+        val gridview = view.findViewById(R.id.bottom_navigation) as RecyclerView
 
         cargarEstrenos()
 
