@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/detalles_pelicula_border"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginRight="15dp"
+        android:gravity="right">
+
+        <ImageButton
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/agregar_a_lista"
+            android:background="@color/grisesito"/>
+
+        <ImageButton
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/por_ver_off"
+            android:background="@color/grisesito"/>
+
+        <ImageButton
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/vista_off"
+            android:background="@color/grisesito"/>
+
+        <ImageButton
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/favorita_off"
+            android:background="@color/grisesito"/>
+
+        <ImageButton
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/compartir"
+            android:background="@color/grisesito"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_pelicula"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:src="@drawable/king_kong" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_peli_titulo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/litteratextbold"
+                    android:textSize="20sp"
+                    android:text="Godzilla Vs Kong" />
+
+                <TextView
+                    android:id="@+id/tv_peli_titulo_ingles"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/litteratextlight"
+                    android:text="Godzilla Vs Kong (2021)" />
+
+                <LinearLayout
+                    android:id="@+id/linear_datos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"/>
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:stretchColumns="1">
+
+                    <TableRow
+                        android:layout_marginBottom="10dp">
+                        <TextView
+                            android:layout_column="1"
+                            android:text="Director"
+                            android:textColor="@color/white"
+                            android:fontFamily="sans-serif-black"/>
+
+                        <TextView
+                            android:text="Reparto"
+                            android:gravity="left"
+                            android:textColor="@color/white"
+                            android:fontFamily="sans-serif-black"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/tv_director"
+                            android:layout_column="1"
+                            android:text="Adam Wingward"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/litteratextlight"/>
+
+                        <TextView
+                            android:text="Rebecca Hall"
+                            android:gravity="left"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/litteratextlight"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:layout_column="2"
+                            android:text="Alexander Skarsgård"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/litteratextlight"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:layout_column="2"
+                            android:text="Eiza González"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/litteratextlight"/>
+                    </TableRow>
+
+                    <TableRow>
+                        <TextView
+                            android:layout_column="2"
+                            android:text="Millie Bobby Brown"
+                            android:textColor="@color/white"
+                            android:textSize="12sp"
+                            android:fontFamily="@font/litteratextlight"/>
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/linear"
+                android:layout_marginBottom="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15sp"
+                    android:fontFamily="@font/litteratextbold"
+                    android:gravity="center"
+                    android:text="Calificación Media de los Usuarios"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <RatingBar
+                    android:id="@+id/estrellas"
+                    style="@style/Widget.AppCompat.RatingBar.Indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:max="5"
+                    android:numStars="5"
+                    android:progressTint="@color/flat_yellow_1"
+                    android:rating="4.5"
+                    android:stepSize="0.5" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15sp"
+                    android:fontFamily="@font/litteratextbold"
+                    android:gravity="left"
+                    android:text="Trailer"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/img_trailer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/trailer_godzilla" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15sp"
+                    android:fontFamily="@font/litteratextbold"
+                    android:gravity="left"
+                    android:text="Sinopsis"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_sinopsis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15sp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="15sp"
+                    android:fontFamily="@font/litteratextlight"
+                    android:gravity="left"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque finibus ac velit id blandit. Aenean efficitur elit non vulputate pellentesque. Proin metus ipsum, venenatis in mauris ut, commodo consectetur ante. Proin rhoncus justo sed lectus ultricies pretium. Sed luctus eget lacus in viverra."
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

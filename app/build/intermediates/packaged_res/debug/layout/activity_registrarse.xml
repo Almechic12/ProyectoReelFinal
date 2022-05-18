@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/graybg"
+    tools:context=".RegistrarseActivity">
+
+    <ImageView
+        android:layout_width="265dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo"
+
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="@string/registrar"
+        android:fontFamily="@font/litteratextbold"
+        android:textSize="38sp"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/tv_nombreUsu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginLeft="90sp"
+        android:layout_marginTop="40dp"
+        android:drawablePadding="5dp"
+        android:text="@string/nombre_usuario"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:fontFamily="@font/litteratextbold"
+        app:drawableLeftCompat="@drawable/ic_baseline_person_24" />
+
+    <EditText
+        android:id="@+id/nombreusuarios"
+        android:layout_width="240dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:inputType="text"
+        android:background="@drawable/round_button_gris"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_nombreContra"
+        android:layout_marginTop="30dp"
+        android:drawablePadding="5dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="90sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/contra"
+        android:fontFamily="@font/litteratextbold"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        app:drawableLeftCompat="@drawable/ic_baseline_lock_24"
+        />
+
+    <EditText
+        android:id="@+id/contra"
+        android:layout_width="240dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/round_button_gris"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_repetirC"
+        android:layout_marginTop="30dp"
+        android:drawablePadding="5dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="90sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/repiteC"
+        android:fontFamily="@font/litteratextbold"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        app:drawableLeftCompat="@drawable/ic_baseline_lock_24"
+        />
+
+    <EditText
+        android:id="@+id/repiteContra"
+        android:layout_width="240dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="5dp"
+        android:inputType="textPassword"
+        android:background="@drawable/round_button_gris"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_nombreU"
+        android:layout_marginTop="30dp"
+        android:drawablePadding="5dp"
+        android:layout_gravity="left"
+        android:layout_marginLeft="90sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:fontFamily="@font/litteratextbold"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        app:drawableLeftCompat="@drawable/ic_baseline_email_24"
+        />
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="240dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textAlignment="center"
+        android:background="@drawable/round_button_gris"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnregist"
+        android:layout_width="160dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_button"
+        android:text="@string/registra"
+        android:textColor="@color/black"
+        android:fontFamily="@font/litteratextbold" />
+
+    <TextView
+        android:id="@+id/list_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btnregist"
+        android:textAlignment="center"/>
+
+</LinearLayout>

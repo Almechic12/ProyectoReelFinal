@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "C:\\Users\\ediit\\AndroidStudioProjects\\ProyectoReelFinal3\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_detalles_pelicula.xml",
+        "source": "C:\\Users\\ediit\\AndroidStudioProjects\\ProyectoReelFinal3\\app\\src\\main\\res\\layout\\activity_detalles_pelicula.xml"
+    },
+    {
+        "merged": "C:\\Users\\ediit\\AndroidStudioProjects\\ProyectoReelFinal3\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_horarios.xml",
+        "source": "C:\\Users\\ediit\\AndroidStudioProjects\\ProyectoReelFinal3\\app\\src\\main\\res\\layout\\fragment_horarios.xml"
+    },
+    {
+        "merged": "C:\\Users\\ediit\\AndroidStudioProjects\\ProyectoReelFinal3\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login.xml",
+        "source": "C:\\Users\\ediit\\AndroidStudioProjects\\ProyectoReelFinal3\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "C:\\Users\\ediit\\AndroidStudioProjects\\ProyectoReelFinal3\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_perfil.xml",
+        "source": "C:\\Users\\ediit\\AndroidStudioProjects\\ProyectoReelFinal3\\app\\src\\main\\res\\layout\\fragment_perfil.xml"
+    },
+    {
+        "merged": "C:\\Users\\ediit\\AndroidStudioProjects\\ProyectoReelFinal3\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_cines.xml",
+        "source": "C:\\Users\\ediit\\AndroidStudioProjects\\ProyectoReelFinal3\\app\\src\\main\\res\\layout\\fragment_cines.xml"
+    },
+    {
+        "merged": "C:\\Users\\ediit\\AndroidStudioProjects\\ProyectoReelFinal3\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_estrenos.xml",
+        "source": "C:\\Users\\ediit\\AndroidStudioProjects\\ProyectoReelFinal3\\app\\src\\main\\res\\layout\\fragment_estrenos.xml"
+    },
+    {
+        "merged": "C:\\Users\\ediit\\AndroidStudioProjects\\ProyectoReelFinal3\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_calificaciones.xml",
+        "source": "C:\\Users\\ediit\\AndroidStudioProjects\\ProyectoReelFinal3\\app\\src\\main\\res\\layout\\fragment_calificaciones.xml"
+    },
+    {
+        "merged": "C:\\Users\\ediit\\AndroidStudioProjects\\ProyectoReelFinal3\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_inicio.xml",
+        "source": "C:\\Users\\ediit\\AndroidStudioProjects\\ProyectoReelFinal3\\app\\src\\main\\res\\layout\\fragment_inicio.xml"
+    },
+    {
+        "merged": "C:\\Users\\ediit\\AndroidStudioProjects\\ProyectoReelFinal3\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_datos.xml",
+        "source": "C:\\Users\\ediit\\AndroidStudioProjects\\ProyectoReelFinal3\\app\\src\\main\\res\\layout\\fragment_datos.xml"
+    },
+    {
+        "merged": "C:\\Users\\ediit\\AndroidStudioProjects\\ProyectoReelFinal3\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_registrarse.xml",
+        "source": "C:\\Users\\ediit\\AndroidStudioProjects\\ProyectoReelFinal3\\app\\src\\main\\res\\layout\\activity_registrarse.xml"
+    },
+    {
+        "merged": "C:\\Users\\ediit\\AndroidStudioProjects\\ProyectoReelFinal3\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_cartelera.xml",
+        "source": "C:\\Users\\ediit\\AndroidStudioProjects\\ProyectoReelFinal3\\app\\src\\main\\res\\layout\\fragment_cartelera.xml"
+    },
+    {
+        "merged": "C:\\Users\\ediit\\AndroidStudioProjects\\ProyectoReelFinal3\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\ediit\\AndroidStudioProjects\\ProyectoReelFinal3\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\ediit\\AndroidStudioProjects\\ProyectoReelFinal3\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\pelicula.xml",
+        "source": "C:\\Users\\ediit\\AndroidStudioProjects\\ProyectoReelFinal3\\app\\src\\main\\res\\layout\\pelicula.xml"
+    },
+    {
+        "merged": "C:\\Users\\ediit\\AndroidStudioProjects\\ProyectoReelFinal3\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_ubicacion.xml",
+        "source": "C:\\Users\\ediit\\AndroidStudioProjects\\ProyectoReelFinal3\\app\\src\\main\\res\\layout\\activity_ubicacion.xml"
+    }
+]

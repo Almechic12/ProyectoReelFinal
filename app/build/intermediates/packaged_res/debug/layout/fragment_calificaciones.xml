@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="15dp"
+    android:background="@drawable/estrenos_border"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/calificacion_border">
+
+                <ImageView
+                    android:id="@+id/img_profile1"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/profile_icon"/>
+
+                <TextView
+                    android:id="@+id/tv_nombreUsuario1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/img_profile1"
+                    android:text="Rick Sanchez"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/litteratextbold" />
+
+                <RatingBar
+                    android:id="@+id/rb_rating1"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_nombreUsuario1"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/img_profile1"
+                    android:numStars="5"
+                    android:progressTint="@color/flat_yellow_1"
+                    android:rating="5" />
+
+                <TextView
+                    android:id="@+id/tv_fecha1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@id/tv_nombreUsuario1"
+                    android:fontFamily="@font/litteratextlight"
+                    android:gravity="right"
+                    android:text="25/marzo/2021"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_fecha1"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@id/rb_rating1"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/img_upvote1"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:background="@color/gris"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/upvote_off" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:text="31"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/litteratextbold" />
+
+                    <ImageButton
+                        android:id="@+id/img_downvote1"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:background="@color/gris"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/downvote_off" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_profile1"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/litteratextlight"
+                    android:text="Todo lo que me esperaba y más. Un poco lenta en algunas partes, pero esa batalla final hizo que valiera completamente la pena. 100% recomendada, sobre todo si eres fan del Monsterverse, ya que podemos esperar mucho más de esta saga de películas en el futuro."
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/calificacion_border">
+
+                <ImageView
+                    android:id="@+id/img_profile2"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/profile_icon"/>
+
+                <TextView
+                    android:id="@+id/tv_nombreUsuario2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/img_profile2"
+                    android:text="RyanStartedTheFire"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/litteratextbold" />
+
+                <RatingBar
+                    android:id="@+id/rb_rating2"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_nombreUsuario2"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/img_profile2"
+                    android:numStars="5"
+                    android:progressTint="@color/flat_yellow_1"
+                    android:rating="5" />
+
+                <TextView
+                    android:id="@+id/tv_fecha2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@id/tv_nombreUsuario2"
+                    android:fontFamily="@font/litteratextlight"
+                    android:gravity="right"
+                    android:text="25/marzo/2021"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_fecha2"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@id/rb_rating2"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/img_upvote2"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:background="@color/gris"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/upvote_off" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:text="24"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/litteratextbold" />
+
+                    <ImageButton
+                        android:id="@+id/img_downvote2"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:background="@color/gris"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/downvote_off" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_profile2"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/litteratextlight"
+                    android:text="Épico. Nada más que decir."
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/calificacion_border">
+
+                <ImageView
+                    android:id="@+id/img_profile3"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/profile_icon"/>
+
+                <TextView
+                    android:id="@+id/tv_nombreUsuario3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/img_profile3"
+                    android:text="Parry Hotter"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/litteratextbold" />
+
+                <RatingBar
+                    android:id="@+id/rb_rating3"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_nombreUsuario3"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/img_profile3"
+                    android:numStars="5"
+                    android:progressTint="@color/flat_yellow_1"
+                    android:rating="4" />
+
+                <TextView
+                    android:id="@+id/tv_fecha3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@id/tv_nombreUsuario3"
+                    android:fontFamily="@font/litteratextlight"
+                    android:gravity="right"
+                    android:text="25/marzo/2021"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_fecha3"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@id/rb_rating3"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/img_upvote3"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:background="@color/gris"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/upvote_off" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:text="22"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/litteratextbold" />
+
+                    <ImageButton
+                        android:id="@+id/img_downvote3"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:background="@color/gris"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/downvote_off" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_profile3"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/litteratextlight"
+                    android:text="Las partes de acción estuvieron bien, pero hubo partes que se me hacían muy aburridas. 4/5"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/calificacion_border">
+
+                <ImageView
+                    android:id="@+id/img_profile4"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/profile_icon"/>
+
+                <TextView
+                    android:id="@+id/tv_nombreUsuario4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/img_profile4"
+                    android:text="MrPotato"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/litteratextbold" />
+
+                <RatingBar
+                    android:id="@+id/rb_rating4"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_nombreUsuario4"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/img_profile4"
+                    android:numStars="5"
+                    android:progressTint="@color/flat_yellow_1"
+                    android:rating="5" />
+
+                <TextView
+                    android:id="@+id/tv_fecha4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@id/tv_nombreUsuario4"
+                    android:fontFamily="@font/litteratextlight"
+                    android:gravity="right"
+                    android:text="25/marzo/2021"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_fecha4"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@id/rb_rating4"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/img_upvote4"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:background="@color/gris"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/upvote_off" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:text="19"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/litteratextbold" />
+
+                    <ImageButton
+                        android:id="@+id/img_downvote4"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:background="@color/gris"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/downvote_off" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_profile4"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/litteratextlight"
+                    android:text="TEAM KONG POR SIEMPRE!!!"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/calificacion_border">
+
+                <ImageView
+                    android:id="@+id/img_profile5"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/profile_icon"/>
+
+                <TextView
+                    android:id="@+id/tv_nombreUsuario5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/img_profile5"
+                    android:text="Joanna K"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/litteratextbold" />
+
+                <RatingBar
+                    android:id="@+id/rb_rating5"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_nombreUsuario5"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/img_profile5"
+                    android:numStars="5"
+                    android:progressTint="@color/flat_yellow_1"
+                    android:rating="4" />
+
+                <TextView
+                    android:id="@+id/tv_fecha5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@id/tv_nombreUsuario5"
+                    android:fontFamily="@font/litteratextlight"
+                    android:gravity="right"
+                    android:text="25/marzo/2021"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_fecha5"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@id/rb_rating5"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/img_upvote5"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:background="@color/gris"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/upvote_off" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:text="15"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/litteratextbold" />
+
+                    <ImageButton
+                        android:id="@+id/img_downvote5"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:background="@color/gris"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/downvote_off" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_profile5"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/litteratextlight"
+                    android:text="La peli estuvo buenísima, no era muy fan de las películas del Monsterverse pero luego de ver algo tan genial creo que me daré el tiempo de ver las otras de Godzilla y Kong. Espero que saquen más :)"
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/calificacion_border">
+
+                <ImageView
+                    android:id="@+id/img_profile"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_margin="10dp"
+                    android:src="@drawable/profile_icon"/>
+
+                <TextView
+                    android:id="@+id/tv_nombreUsuario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@+id/img_profile"
+                    android:text="Arceus Inmortal"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/litteratextbold" />
+
+                <RatingBar
+                    android:id="@+id/rb_rating"
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_nombreUsuario"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/img_profile"
+                    android:numStars="5"
+                    android:progressTint="@color/flat_yellow_1"
+                    android:rating="4" />
+
+                <TextView
+                    android:id="@+id/tv_fecha"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_toEndOf="@id/tv_nombreUsuario"
+                    android:fontFamily="@font/litteratextlight"
+                    android:gravity="right"
+                    android:text="26/marzo/2021"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_fecha"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toEndOf="@id/rb_rating"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/img_upvote"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:background="@color/gris"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/upvote_off" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginRight="2dp"
+                        android:text="8"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/litteratextbold" />
+
+                    <ImageButton
+                        android:id="@+id/img_downvote"
+                        android:layout_width="18dp"
+                        android:layout_height="18dp"
+                        android:background="@color/gris"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/downvote_off" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_profile"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/litteratextlight"
+                    android:text="Todo lo que me esperaba y más. Un poco lenta en algunas partes, pero esa batalla final hizo que valiera completamente la pena. 100% recomendada, sobre todo si eres fan del Monsterverse, ya que podemos esperar mucho más de esta saga de películas en el futuro."
+                    android:textColor="@color/white"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
