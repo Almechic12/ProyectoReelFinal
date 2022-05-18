@@ -11,13 +11,13 @@
         android:theme="@style/Theme.ProyectoFinalReel">
         <activity
             android:name=".FiltroActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".FiltrosActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".detalles_pelicula"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".RegistrarseActivity"
             android:exported="true"

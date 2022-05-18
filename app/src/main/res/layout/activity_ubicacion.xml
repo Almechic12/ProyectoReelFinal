@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="20dp"
-            android:fontFamily="@font/LitteraTextRegular"
+            android:fontFamily="@font/litteratextregular"
             android:text="Ubicación"
             android:textColor="@color/white"
             android:textSize="35dp"
@@ -50,7 +50,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="30dp"
-                android:fontFamily="@font/LitteraTextRegular"
+                android:fontFamily="@font/litteratextregular"
                 android:text="Permitir detección de ubicación"
                 android:textColor="@color/white"
                 android:textSize="18dp"
@@ -58,11 +58,11 @@
 
             <Switch
                 android:id="@+id/btn_ubicacion"
-                android:layout_width="35dp"
+                android:layout_width="wrap_content"
                 android:layout_height="35dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="30dp"
-                android:background="@drawable/toggle_interruptor"
+                android:background=""
                 android:textOff=""
                 android:textOn="" />
         </LinearLayout>
@@ -77,7 +77,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:fontFamily="@font/LitteraTextRegular"
+                android:fontFamily="@font/litteratextregular"
                 android:text="Ciudad destacada"
                 android:textColor="@color/white"
                 android:textSize="18dp"
