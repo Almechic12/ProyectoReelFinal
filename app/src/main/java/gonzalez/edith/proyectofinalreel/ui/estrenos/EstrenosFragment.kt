@@ -1,7 +1,6 @@
 package gonzalez.edith.proyectofinalreel.ui.estrenos
 
 import android.content.Context
-import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
 import android.os.Bundle
@@ -10,19 +9,22 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.*
 import androidx.fragment.app.Fragment
+import androidx.lifecycle.ProcessLifecycleOwner
 import androidx.lifecycle.ViewModelProvider
-import androidx.recyclerview.widget.RecyclerView
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener
+import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
 import gonzalez.edith.proyectofinalreel.Estreno
-import gonzalez.edith.proyectofinalreel.Pelicula
 import gonzalez.edith.proyectofinalreel.R
 import gonzalez.edith.proyectofinalreel.databinding.FragmentEstrenosBinding
-import gonzalez.edith.proyectofinalreel.detalles_pelicula
-import gonzalez.edith.proyectofinalreel.ui.cartelera.CarteleraFragment
+
 
 class EstrenosFragment : Fragment() {
 
     private var _binding: FragmentEstrenosBinding? = null
     var estrenos = ArrayList<Estreno>()
+
+
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -54,13 +56,13 @@ class EstrenosFragment : Fragment() {
     }
 
     fun cargarEstrenos(){
-        estrenos.add(Estreno("1 de abril", "En Guerra con mi Abuelo", "War with Grandpa (2020)", arrayListOf("S/C", "94 min", "Comedia"), R.drawable.trailer_guerra_con_mi_abuelo, "Cuando el abuelo Jack se muda con la familia, Peter se ve obligado a renunciar a su dormitorio. Para recuperarlo, trama con sus amigos una serie de bromas. Sin embargo, el abuelo no se rinde fácilmente y se convierte en una guerra entre los dos."))
-        estrenos.add(Estreno("1 de abril", "El Padre", "The Father (2020)", arrayListOf("S/C", "97 min", "Drama"), R.drawable.trailer_el_padre, "Un hombre rechaza la ayuda de su hija según va envejeciendo. A medida que intenta dar sentido a sus circunstancias cambiantes, comienza a dudar de sus seres queridos, de su propia mente e incluso del tejido de su realidad."))
-        estrenos.add(Estreno("1 de abril", "Judas y el Mesías Negro", "Judas and the Black Messiah (2021)", arrayListOf("S/C", "126 min", "Drama"), R.drawable.trailer_judas_y_el_mesias_negro, "La película está basada en hechos reales, es la incursión de Bill O´Neal en Las Panteras Negras: movimiento político en defensa de los derechos de los negros y el socialismo. Un acercamiento a la psicología del “Judas negro” nos sumerge en los vaivenes de un callejón sin salida prefabricado a medida."))
-        estrenos.add(Estreno("8 de abril", "Relic: Herencia Maldita", "Relic (2020)", arrayListOf("B", "90 min", "Drama, Terror"), R.drawable.trailer_relic_herencia_maldita, "Una hija, una madre y una abuela son acosadas por un tipo de demencia que está consumiendo a la familia. Cuando Edna desaparece, su hija y nieta se dan cuenta de que algo la está persiguiendo."))
-        estrenos.add(Estreno("8 de abril", "Hermosa Venganza", "Promising Young Woman (2020)", arrayListOf("S/C", "113 min", "Comedia, Drama, Crimen"), R.drawable.trailer_hermosa_venganza, "Cassie tenía un brillante futuro por delante hasta que un acontecimiento inesperado truncó su carrera. Ahora nada en su vida es lo que parece: es inteligente, audaz y vive una doble vida de noche. Cassie tiene la oportunidad de enmendar todo lo que no salió bien en su pasado, vengándose de los culpables."))
-        estrenos.add(Estreno("15 de abril", "Mortal Kombat", "Mortal Kombat (2021)", arrayListOf("S/C", "100 min", "Acción, Aventura"), R.drawable.trailer_mortal_kombat, "Cole Young, el luchador de MMA, acostumbrado a recibir palizas por dinero, desconoce su ascendencia, y tampoco sabe por qué el emperador Shang Tsung de Outworld ha enviado a su mejor guerrero, Sub-Zero, un Cryomancer sobrenatural, para dar caza a Cole. Ante esta situación, Cole teme por la seguridad de su familia y busca a Sonya Blade siguiendo las indicaciones de Jax, un comandante de las Fuerzas Especiales que tiene la misma extraña marca de dragón con la que nació Cole."))
-        estrenos.add(Estreno("15 de abril", "Nomadland", "Nomadland (2020)", arrayListOf("S/C", "107 min", "Drama"), R.drawable.trailer_nomad_land, "Tras el colapso económico de una zona rural en Nevada, Fern (Frances McDormand) decide subirse a su furgoneta y echarse a la carretera convertida en una nómada moderna, dispuesta a descubrir cómo es la vida en los márgenes de la sociedad convencional."))
+        estrenos.add(Estreno("1 de abril", "En Guerra con mi Abuelo", "War with Grandpa (2020)", arrayListOf("S/C", "94 min", "Comedia"), R.drawable.trailer_guerra_con_mi_abuelo, "wNJGtez9Qz4","Cuando el abuelo Jack se muda con la familia, Peter se ve obligado a renunciar a su dormitorio. Para recuperarlo, trama con sus amigos una serie de bromas. Sin embargo, el abuelo no se rinde fácilmente y se convierte en una guerra entre los dos."))
+        estrenos.add(Estreno("1 de abril", "El Padre", "The Father (2020)", arrayListOf("S/C", "97 min", "Drama"), R.drawable.trailer_el_padre, "GvcW2ArYpwY","Un hombre rechaza la ayuda de su hija según va envejeciendo. A medida que intenta dar sentido a sus circunstancias cambiantes, comienza a dudar de sus seres queridos, de su propia mente e incluso del tejido de su realidad."))
+        estrenos.add(Estreno("1 de abril", "Judas y el Mesías Negro", "Judas and the Black Messiah (2021)", arrayListOf("S/C", "126 min", "Drama"), R.drawable.trailer_judas_y_el_mesias_negro, "iaibc6LI1_g", "La película está basada en hechos reales, es la incursión de Bill O´Neal en Las Panteras Negras: movimiento político en defensa de los derechos de los negros y el socialismo. Un acercamiento a la psicología del “Judas negro” nos sumerge en los vaivenes de un callejón sin salida prefabricado a medida."))
+        estrenos.add(Estreno("8 de abril", "Relic: Herencia Maldita", "Relic (2020)", arrayListOf("B", "90 min", "Drama, Terror"), R.drawable.trailer_relic_herencia_maldita, "0zbJyg1VGVw", "Una hija, una madre y una abuela son acosadas por un tipo de demencia que está consumiendo a la familia. Cuando Edna desaparece, su hija y nieta se dan cuenta de que algo la está persiguiendo."))
+        estrenos.add(Estreno("8 de abril", "Hermosa Venganza", "Promising Young Woman (2020)", arrayListOf("S/C", "113 min", "Comedia, Drama, Crimen"), R.drawable.trailer_hermosa_venganza, "WkMyeI9E8Q8","Cassie tenía un brillante futuro por delante hasta que un acontecimiento inesperado truncó su carrera. Ahora nada en su vida es lo que parece: es inteligente, audaz y vive una doble vida de noche. Cassie tiene la oportunidad de enmendar todo lo que no salió bien en su pasado, vengándose de los culpables."))
+        estrenos.add(Estreno("15 de abril", "Mortal Kombat", "Mortal Kombat (2021)", arrayListOf("S/C", "100 min", "Acción, Aventura"), R.drawable.trailer_mortal_kombat, "Y2O4RCdwCGM","Cole Young, el luchador de MMA, acostumbrado a recibir palizas por dinero, desconoce su ascendencia, y tampoco sabe por qué el emperador Shang Tsung de Outworld ha enviado a su mejor guerrero, Sub-Zero, un Cryomancer sobrenatural, para dar caza a Cole. Ante esta situación, Cole teme por la seguridad de su familia y busca a Sonya Blade siguiendo las indicaciones de Jax, un comandante de las Fuerzas Especiales que tiene la misma extraña marca de dragón con la que nació Cole."))
+        estrenos.add(Estreno("15 de abril", "Nomadland", "Nomadland (2020)", arrayListOf("S/C", "107 min", "Drama"), R.drawable.trailer_nomad_land, "ggGbsPmqaUw", "Tras el colapso económico de una zona rural en Nevada, Fern (Frances McDormand) decide subirse a su furgoneta y echarse a la carretera convertida en una nómada moderna, dispuesta a descubrir cómo es la vida en los márgenes de la sociedad convencional."))
     }
 
     class EstrenoAdapter: BaseAdapter {
@@ -90,14 +92,25 @@ class EstrenosFragment : Fragment() {
             var vista = inflator.inflate(R.layout.estreno, null)
 
             var fecha_estreno = vista.findViewById(R.id.tv_fecha_estreno) as TextView
-            var imagen = vista.findViewById(R.id.img_estreno) as ImageView
+//            var imagen = vista.findViewById(R.id.img_estreno) as ImageView
+            var enlace = vista.findViewById(R.id.yt_video) as YouTubePlayerView
             var titulo = vista.findViewById(R.id.tv_peli_titulo) as TextView
             var titulo_ingles = vista.findViewById(R.id.tv_peli_titulo_ingles) as TextView
             var etiqueta = vista.findViewById(R.id.linear_etiqueta) as LinearLayout
             var sinopsis = vista.findViewById(R.id.tv_sinopsis) as TextView
 
             fecha_estreno.text = estreno.fechaEstreno
-            imagen.setImageResource(estreno.image)
+//            imagen.setImageResource(estreno.image)
+
+            val lifecycle = ProcessLifecycleOwner.get().lifecycle
+            lifecycle.addObserver(enlace)
+            enlace.addYouTubePlayerListener(object : AbstractYouTubePlayerListener() {
+                override fun onReady(youTubePlayer: YouTubePlayer) {
+                    val videoId = estreno.enlace
+                    youTubePlayer.cueVideo(videoId, 0f)
+                }
+            })
+
             titulo.text = estreno.titulo
             titulo_ingles.text = estreno.tituloIngles
             sinopsis.text = estreno.sinopsis
@@ -108,8 +121,8 @@ class EstrenosFragment : Fragment() {
                 tv_etiqueta.setPadding(5,5,5,5)
                 tv_etiqueta.setTextColor(Color.BLACK)
                 tv_etiqueta.setBackgroundColor(Color.WHITE)
-                tv_etiqueta.setSingleLine(true)
-                tv_etiqueta.setTextSize(10.0f)
+                tv_etiqueta.isSingleLine = true
+                tv_etiqueta.textSize = 10.0f
                 tv_etiqueta.setTypeface(null, Typeface.BOLD)
                 val params = LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT)
                 params.setMargins(0,0,10,0)

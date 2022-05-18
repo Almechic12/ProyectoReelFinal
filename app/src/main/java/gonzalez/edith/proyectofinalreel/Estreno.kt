@@ -5,4 +5,5 @@ class Estreno (var fechaEstreno: String,
                var tituloIngles: String,
                var etiquetas: ArrayList<String>,
                var image: Int,
+               var enlace: String,
                var sinopsis: String)
