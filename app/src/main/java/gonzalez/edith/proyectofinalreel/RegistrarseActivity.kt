@@ -42,6 +42,7 @@ class RegistrarseActivity: AppCompatActivity() {
             } else{
                 createAccount(mEmail, mPassword)
                 Toast.makeText(this, "Se a registrado la cuenta con exito", Toast.LENGTH_SHORT).show()
+                login()
             }
         }
 
