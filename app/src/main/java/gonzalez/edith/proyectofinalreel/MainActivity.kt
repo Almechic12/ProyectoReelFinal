@@ -63,6 +63,7 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
     }
+
     private fun signOut(){
         Firebase.auth.signOut()
         val intent = Intent(this,MainActivity::class.java)
