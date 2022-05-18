@@ -37,13 +37,13 @@ class EstrenosFragment : Fragment() {
             ViewModelProvider(this).get(EstrenosViewModel::class.java)
 
         val view = inflater.inflate(R.layout.fragment_estrenos, container, false)
-        val gridview = view.findViewById(R.id.bottom_navigation) as RecyclerView
+        val listview = view.findViewById(R.id.listview) as ListView
 
         cargarEstrenos()
 
         var adapter: EstrenoAdapter? = null
         adapter = EstrenoAdapter(estrenos, this.context)
-        gridview.adapter = adapter
+        listview.adapter = adapter
 
         return view
     }
