@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ProyectoFinalReel">
         <activity
+            android:name=".FiltroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FiltrosActivity"
+            android:exported="false" />
+        <activity
             android:name=".detalles_pelicula"
             android:exported="false" />
         <activity

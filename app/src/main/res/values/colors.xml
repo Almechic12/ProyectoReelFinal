@@ -11,4 +11,5 @@
     <color name="graybg">#151515</color>
     <color name="grisesito">#282828</color>
     <color name="grisBlack">#121212</color>
+    <color name="color_background">#121212</color>
 </resources>
